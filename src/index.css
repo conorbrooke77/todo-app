@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #27292c;
+  --color-reactBlue: #61dafb;
+  --font-display: "Inter", "sans-serif";
+}
+
+* {
+  font-family: var(--font-display);
+}
+
+#facts-list > li::marker {
+  color: var(--color-reactBlue);
+  font-size: 1.5rem;
+}
